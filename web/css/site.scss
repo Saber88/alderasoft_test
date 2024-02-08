@@ -1,0 +1,49 @@
+$textColor: #ffffff;
+
+$defaultTransition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+body {
+  color: $textColor;
+}
+
+#header {
+  background: #0a1942;
+}
+
+#main {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(#0e1e48, #09163a);
+}
+
+#footer {
+  padding-bottom: 2rem;
+  background: #0a1942;
+}
+
+.navbar-brand, .nav-link, .nav-link.disabled {
+  color: $textColor;
+
+  &:hover, &:focus, {
+    text-decoration: underline;
+    color: $textColor;
+  }
+}
+
+.dropdown-menu {
+  background: #1744bf;
+
+  .dropdown-item {
+    color: $textColor;
+
+    &:hover, &:focus, {
+      background: inherit;
+      text-decoration: underline;
+      color: $textColor;
+    }
+  }
+}
+
+.table {
+  color: inherit;
+}
